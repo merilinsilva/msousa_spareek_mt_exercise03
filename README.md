@@ -64,7 +64,7 @@ Please make sure your structure is as follows:
 
 ## Directory changes that need to be made
 
-### Run everything from the `msousa_spareek_mt_exercise03/mt-exercise-03` directory
+- Run everything from the `msousa_spareek_mt_exercise03/mt-exercise-03` directory
 
 ### mt-exercise-03/configs/deen_transformer_prenorm.yaml and mt-exercise-03/configs/deen_transformer_postnorm.yaml
 
