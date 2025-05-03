@@ -46,19 +46,21 @@ Please make sure your structure is as follows:
         └── 📁docs
         └── 📁joeynmt
         └── 📁joeynmt.egg-info
-    └── 📁mt-exercise-03
-        └── 📁configs
-        └── 📁data
-        └── 📁extracted_ppls
-        └── 📁logs
-        └── 📁models
-            └── 📁deen_transformer_postnorm
-            └── 📁deen_transformer_prenorm
-        └── 📁scripts
-        └── 📁shared_models
-        └── 📁tools
-        └── validation_ppl_plot.png
-        └── 📁venvs
+    └── 📁msousa_spareek_mt_exercise03
+        └── 📁mt-exercise-03
+            └── 📁configs
+            └── 📁data
+            └── 📁extracted_ppls
+            └── 📁logs
+            └── 📁models
+                └── 📁deen_transformer_postnorm
+                └── 📁deen_transformer_prenorm
+            └── 📁scripts
+            └── 📁shared_models
+            └── 📁tools
+            └── validation_ppl_plot.png
+            └── 📁venvs
+        └── README.md
 ```
 - p.s. it might be that you'll have to run `pip install "numpy<2”` in your venv to ensure that numpy is downgraded.
 
