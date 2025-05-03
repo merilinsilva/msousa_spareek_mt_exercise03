@@ -17,7 +17,11 @@ SECONDS=0
 
 logs=$base/logs
 
-model_name=deen_transformer_postnorm
+model_name=deen_transformer_postnorm_more_steps
+
+# added so it finds the joeynmt folder
+joeynmt_dir=$base/../../joeynmt
+export PYTHONPATH=$joeynmt_dir:$PYTHONPATH
 
 mkdir -p $logs
 

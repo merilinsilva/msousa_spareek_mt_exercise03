@@ -2,9 +2,9 @@ name: "deen_transformer_pre"
 joeynmt_version: "2.0.0"
 
 data:
-  train: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/mt-exercise-03/data/train"
-  dev: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/mt-exercise-03/data/dev"
-  test: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/mt-exercise-03/data/test"
+  train: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/msousa_spareek_mt_exercise03/mt-exercise-03/data/train"
+  dev: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/msousa_spareek_mt_exercise03/mt-exercise-03/datadev"
+  test: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/msousa_spareek_mt_exercise03/mt-exercise-03/datatest"
   dataset_type: "plain"
   src:
     lang: "de"
