@@ -9,7 +9,7 @@ data and train & evaluate models, as well as the necessary data for training you
 - Python 3.10 must be installed on your system, i.e. the command `python3` must be available
 - Make sure virtualenv is installed on your system. To install, e.g.
 
-    `pip install virtualenv`
+  `pip install virtualenv`
 
 # Steps for macOS & Linux users
 
@@ -29,7 +29,6 @@ Download Moses for post-processing:
 
     ./scripts/download_install_packages.sh
 
-
 Train a model:
 
     ./scripts/train.sh
@@ -39,7 +38,9 @@ The training process can be interrupted at any time, and the best checkpoint wil
 # Instruction by our team
 
 ## Directory structure
+
 Please make sure your structure is as follows:
+
 ```
     └── 📁joeynmt
         └── 📁configs
@@ -62,6 +63,7 @@ Please make sure your structure is as follows:
             └── 📁venvs
         └── README.md
 ```
+
 - p.s. it might be that you'll have to run `pip install "numpy<2”` in your venv to ensure that numpy is downgraded.
 
 ## Directory changes that need to be made
@@ -72,10 +74,10 @@ Please make sure your structure is as follows:
 
 1. Under data please change the directories `train, dev and test` to your according full path to the files in the folder `data`
 
-
 ## How to solve the exercise
+
 1. depending on which model you wish to run, change the line 20 in the `train.sh` file and run `./scripts/train.sh`
 2. Under `scripts` you will find the bash file `extract_ppl.sh`, run the file with its full path to create the separate tabels and the `extracted_ppls/merged_table.csv`
 3. In the same folder you will find `plot_ppl.py`, run `python ./scripts/plot_ppl.py` to create the final plot.
 4. It might be that you get the message that you dont have permission to run a file, then run `chmod +x "FILE"` and run the the previous command again.
-
+5. If you wish to run the extra postnorm version, just use the `deen_transformer_postnorm_more_steps` (change paths in file) as the model name in `train.sh` and after training run the `extract_ppl_extra.sh` file and finally `python ./scripts/plot_ppl_extra.py` for the plot.
