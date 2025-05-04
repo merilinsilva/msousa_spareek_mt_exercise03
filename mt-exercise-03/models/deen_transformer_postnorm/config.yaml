@@ -2,9 +2,9 @@ name: "deen_transformer_pre"
 joeynmt_version: "2.0.0"
 
 data:
-  train: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/msousa_spareek_mt_exercise03/mt-exercise-03/data/train"
-  dev: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/msousa_spareek_mt_exercise03/mt-exercise-03/data/dev"
-  test: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/msousa_spareek_mt_exercise03/mt-exercise-03/data/test"
+  train: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/mt-exercise-03/data/train"
+  dev: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/mt-exercise-03/data/dev"
+  test: "/Users/merilinsilva/Desktop/msousa_spareek_mt_exercise03/mt-exercise-03/data/test"
   dataset_type: "plain"
   src:
     lang: "de"
@@ -51,7 +51,7 @@ training:
   weight_decay: 0.0
   decrease_factor: 0.7
   early_stopping_metric: "ppl"
-  epochs: 15
+  epochs: 10
   validation_freq: 500
   logging_freq: 100
   eval_metric: ["bleu"]
